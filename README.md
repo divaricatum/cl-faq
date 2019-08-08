@@ -1,6 +1,6 @@
 # Allegro Common Lisp FAQ
 
-\[Last updated on: 2015-03-13T15:41:07+7:00.\]
+\[Last updated on: 2019-08-08.\]
 
 <div>
 
@@ -70,7 +70,7 @@ system and Allegro CL?](#s1q8)
 * [\[Express\] \[Windows\] Is my antivirus software correct that the Express Edition is a virus?](#s3q4)
 * [\[Express\] How long can I use the Express Edition?](#s3q5)
 * [\[Express\] Does the Express Edition expire?](#expresslicense)
-* [\[Express\] The date in the license file (devel.lic) is in the future, but when I run Allegro CL it says my license has expired. Why might thishappen?](#s3q6)
+* [\[Express\] The date in the license file (devel.lic) is in the future, but when I run Allegro CL it says my license has expired. Why might this happen?](#s3q6)
 * [\[Express\] How do I build mlisp, alisp, or allegro images?](#s3q7)
 
 ## [Professional/Enterprise Edition installation and license file issues](#s-proent)
@@ -200,7 +200,7 @@ the eof-error-p argument as nil?](#s17q2)
 
 <span id="s1q1" style="color:red"></span>
 
-### What is the current version of Allegro CL?
+### Q. What is the current version of Allegro CL?
 
 The current version of Allegro CL is shown on [this
 page](https://franz.com/products/allegro-common-lisp/index.lhtml). This
@@ -210,7 +210,7 @@ version number is relevant to a FAQ answer.
 
 <span id="s1q2"></span>
 
-### <span id="howtoreportbugs">How should I report bugs?</span>
+### <span id="howtoreportbugs" style="color:red>Q. How should I report bugs?</span>
 
 What should be included in a bug report is described in the section
 [Reporting
@@ -241,7 +241,7 @@ transmit info.
 
 <span id="s1q3"></span>
 
-### Sometimes CL output is not logged in the dribble-bug file. What do I do about this?
+### Q. Sometimes CL output is not logged in the dribble-bug file. What do I do about this?
 
 If you are using
 [dribble-bug](https://franz.com/support/documentation/current/doc/operators/excl/dribble-bug.htm)
@@ -259,14 +259,14 @@ record.
 
 <span id="s1q4"></span>
 
-### Is there a mailing list for Allegro CL? How do I sign up?
+### Q. Is there a mailing list for Allegro CL? How do I sign up?
 
 There is not. Please send mail to <support@franz.com> for technical
 inquiries or <info@franz.com> for all other questions or comments.
 
 <span id="s1q5"></span>
 
-### Is the ACL documentation available on-line?
+### Q. Is the ACL documentation available on-line?
 
 Yes, at
 [http://franz.com/support/documentation/](https://franz.com/support/documentation/). It
@@ -275,7 +275,7 @@ updated documentation are included in the above link.
 
 <span id="s1q6"></span>
 
-### Are documentation updates available after Allegro CL is released?
+### Q. Are documentation updates available after Allegro CL is released?
 
 Our documentation is frequently updated online after a major release.
 The updated documentation is [available for
@@ -283,7 +283,7 @@ downloading](https://franz.com/support/documentation/).
 
 <span id="s1q7"></span>
 
-### Does Allegro CL run on operating system *X*?
+### Q. Does Allegro CL run on operating system *X*?
 
 Our policy of support of Allegro CL on specific operating system
 versions is as follows:
@@ -309,7 +309,7 @@ not part of your production process, in case things don't go well.
 
 <span id="s1q8"></span>
 
-### What is the best question to ask us as to my particular operating system and Allegro CL?
+### Q. What is the best question to ask us as to my particular operating system and Allegro CL?
 
 If the operating system you are interested in running Allegro CL on is
 the same lineage and the underlying architecture is the same as one
@@ -330,7 +330,6 @@ your operating system is very new, are
 
   - Do you know of customers who are successfully running Allegro CL on
     Operating system XYZ?
-
   - Do you have plans to support Allegro CL on Operating System XYZ?
 
 The fundamental issue with Allegro CL working on a new operating system
@@ -347,14 +346,14 @@ and MacOSX, in that time order.
 
 <span id="s2q1"></span>
 
-### How do I install patches?
+### Q. How do I install patches?
 
 The various processes for installing patches are described at
 [http://franz.com/support/patches/](https://franz.com/support/patches/)
 
 <span id="s2q2"></span>
 
-### <span id="patch-list">Is there a list of available patches?</span>
+### <span id="patch-list">Q. Is there a list of available patches?</span>
 
 Yes. In fact, even if you are using
 [sys:update-allegro](https://franz.com/support/documentation/current/doc/operators/system/update-allegro.htm)
@@ -374,7 +373,6 @@ current version) use the link above or
 For 10.0 and 9.0 use:
 
   - [http://franz.com/support/patches/log/10.0/index.lhtml](https://franz.com/support/patches/log/10.0/index.lhtml)
-
   - [http://franz.com/support/patches/log/9.0/index.lhtml](https://franz.com/support/patches/log/9.0/index.lhtml)
 
 We also provide [RSS Feeds](https://franz.com/rss.lhtml) to Patch releases for current
@@ -384,7 +382,7 @@ the RSS feeds to be informed automatically.
 
 <span id="s2q3"></span>
 
-### How do I manually download patches if I am unable to use (sys:update-allegro)?
+### Q. How do I manually download patches if I am unable to use (sys:update-allegro)?
 
 We maintain a publically accessible FTP site from which users can
 download all available patches. Please visit:
@@ -407,7 +405,7 @@ version of Allegro CL see
 
 <span id="s2q4"></span>
 
-### <span id="pvista">Why can't I get update.exe to run on Windows?</span>
+### <span id="pvista">Q. Why can't I get update.exe to run on Windows?</span>
 
 Updating patches is a two-step process. First, a user downloads
 patches, perhaps with the function
@@ -426,20 +424,20 @@ as Administrator*.
 
 <span id="s3q1"></span>
 
-### <span id="updatingexpress">\[Express\] What is the best way to update the Express Edition?</span>
+### <span id="updatingexpress">Q. \[Express\] What is the best way to update the Express Edition?</span>
 
 See [this](https://franz.com/products/express/) for current information.
 
 <span id="s3q3"></span>
 
-### \[Express\] \[Windows\] Can I install the Express Edition if I do not have access to the internet?
+### Q. \[Express\] \[Windows\] Can I install the Express Edition if I do not have access to the internet?
 
 Yes. Much earlier versions of Allegro CL did require internet access for
 installation but current versions do not.
 
 <span id="s3q4"></span>
 
-### \[Express\] \[Windows\] Is my antivirus software correct that the Express Edition is a virus?
+### Q. \[Express\] \[Windows\] Is my antivirus software correct that the Express Edition is a virus?
 
 No. If you downloaded the software from our web site, we believe your
 antivirus software is giving you what is called a *false positive*.
@@ -457,7 +455,7 @@ out for some time. We usually give Express users 6 months or more to
 migrate to the new version.
 
 <span id="expresslicense"></span>
-### \[Express\] Does the Express Edition expire?
+### Q. \[Express\] Does the Express Edition expire?
 
 Yes, we install a license file along with all the other
 files for the release. This built-in license file will typically last 2
@@ -468,7 +466,7 @@ updated release with a new license file.
 
 <span id="s3q6"></span>
 
-### \[Express\] The date in the license file (devel.lic) is in the future, but when I run Allegro CL it says my license has expired. Why might this happen?
+### Q. \[Express\] The date in the license file (devel.lic) is in the future, but when I run Allegro CL it says my license has expired. Why might this happen?
 
 This can happen when the date on your computer is incorrectly set to a
 date in the future later than the license expiration date. Allegro CL
@@ -479,7 +477,7 @@ information on resetting the date on your computer.
 
 <span id="s3q7"></span>
 
-### \[Express\] How do I build mlisp, alisp, or allegro images?
+### Q. \[Express\] How do I build mlisp, alisp, or allegro images?
 
 **Windows**: paste this into the Debug window to build one of
 **mlisp.exe** or **alisp.exe**:
@@ -530,7 +528,7 @@ running **alisp**:
 
 <span id="s4q1"></span>
 
-### <span id="howtolicensefile">How do I install the license file?</span>
+### <span id="howtolicensefile">Q. How do I install the license file?</span>
 
 You should have received an email containing a URL from which you can
 download your license file. ([Click here if you haven't received that
@@ -565,7 +563,7 @@ cannot access the URL.](#lfcannotaccessurl))
 
 <span id="s4q2"></span>
 
-### <span id="lfmissingemail">I have misplaced the email telling me the URL from which I can download your license?</span>
+### <span id="lfmissingemail">Q. I have misplaced the email telling me the URL from which I can download your license?</span>
 
 **NOTE: Express lincenses are part of the download so this item does
   not apply to Express.**
@@ -582,7 +580,7 @@ sure to tell us the email address you used in the body of the message.)
 
 <span id="s4q3"></span>
 
-### <span id="lfcannotaccessurl">I can not access the URL for retrieving my license. What should I do?</span>
+### <span id="lfcannotaccessurl">Q. I can not access the URL for retrieving my license. What should I do?</span>
 
 Typically, this problem occurs because your system is behind a firewall
 or you must use a proxy server. Our license file server rarely
@@ -603,24 +601,21 @@ license(s) sent to the email under which you have registered.
 
 <span id="s4q4"></span>
 
-### I still have problems with my license file. Can I contact you for assistance?
+### Q. I still have problems with my license file. Can I contact you for assistance?
 
 Yes. Questions or problems should be sent to <support@franz.com>. Please
 be sure to include the following information:
 
   - what happened, and what steps you took;
-
   - a copy of your current license (devel.lic) file;
-
   - a copy of any error messages that you received; and
-
   - your current email address and daytime telephone number
 
 ## <span id="s-usingacl">Using Allegro Common Lisp</span>
 
 <span id="s5q1"></span>
 
-### <span id="ubuntu32bit">\[Express\] and 32-bit Edition does not work on Ubuntu</span>
+### <span id="ubuntu32bit">Q. \[Express\] and 32-bit Edition does not work on Ubuntu</span>
 
 Ubuntu no longer provides the 32-bit compatibility module needed to run
 a 32-bit Lisp (Allegro CL Express is a 32-bit Lisp). Therefore, Allegro
@@ -629,7 +624,7 @@ Linux implementations (such as Centos 6.5) do provide 32-bit support.
 
 <span id="s5q2"></span>
 
-### \[Express Edition\] Can I use the SSL interface in Allegro CL Express Edition?
+### Q. \[Express Edition\] Can I use the SSL interface in Allegro CL Express Edition?
 
 No. While the SSL module *fasl* file was included in the Express, it was
 not intended that the SSL interface be available in the Express Edition.
@@ -639,7 +634,7 @@ Enterprise Editions.
 
 <span id="s5q3"></span>
 
-### Why doesn't make-pathname merge the given :directory component with the directory component in :defaults argument?
+### Q. Why doesn't make-pathname merge the given :directory component with the directory component in :defaults argument?
 
 Section 19.4.4 of the ANSI spec says:
 
@@ -656,7 +651,7 @@ treated differently from unsupplied.
 
 <span id="s5q4"></span>
 
-### I am getting stack overflows and occasional Lisp failure when I sort on large arrays. Why and what can I do?
+### Q. I am getting stack overflows and occasional Lisp failure when I sort on large arrays. Why and what can I do?
 
 Here is a transcript showing a stack overflow. Note that the array has
 one million (10^6) elements.
@@ -770,7 +765,7 @@ sorted. From the documentation in the source code:
 
 <span id="s5q5"></span>
 
-### I have set the stack cushion (see sys:set-stack-cushion and sys:stack-cushion) to a reasonable value, but the soft stack limit is not being detected, and I get a lisp death instead. Why is that?
+### Q. I have set the stack cushion (see sys:set-stack-cushion and sys:stack-cushion) to a reasonable value, but the soft stack limit is not being detected, and I get a lisp death instead. Why is that?
 
 The stack-cushion (see
 [sys:set-stack-cushion](https://franz.com/support/documentation/current/doc/operators/system/set-stack-cushion.htm)
@@ -820,7 +815,7 @@ to handle it:
 
 <span id="s5q6"></span>
 
-### Why does it take so long to load a file that interns several thousand symbols in a package?
+### Q. Why does it take so long to load a file that interns several thousand symbols in a package?
 
 A package has an associated hashtable for the names of symbols in the
 package. When the size of a package is not specified at creation time, a
@@ -841,7 +836,7 @@ with a form like this:
 
 <span id="s5q7"></span>
 
-### <span id="structureht">Why is equal hash table access slow when the keys are structure objects?</span>
+### <span id="structureht">Q. Why is equal hash table access slow when the keys are structure objects?</span>
 
 The function cl:sxhash always returns the same value for structure
 objects. The reason for this is because it has no extra space to store a
@@ -880,7 +875,7 @@ hash-table.
 
 <span id="s6q1"></span>
 
-### <span id="largeheaps">How can I specify very large heap sizes for 64-bit versions of Lisp?</span>
+### <span id="largeheaps">Q. How can I specify very large heap sizes for 64-bit versions of Lisp?</span>
 
 Something like this will not work of some platforms (64-bit Windows, for
 example):
@@ -907,7 +902,7 @@ Instead, do this:
 
 <span id="s6q2"></span>
 
-### Sometimes Allegro CL, particularly with large images, fail totally with a bus error or a segv. Why might this be happening?
+### Q. Sometimes Allegro CL, particularly with large images, fail totally with a bus error or a segv. Why might this be happening?
 
 In large images, this is occasionally a sign that your system has run
 out of virtual memory. This can occur on platforms that perform lazy
@@ -917,16 +912,14 @@ Instead, you should:
 
   - Have your system administrator increase the available system
     resources.
-
   - Use the Runtime Analyzer to determine what is causing the large
     allocations and resultant heap growth.
-
   - Tune the Garbage Collector to better meet the needs of your
     application.
 
 <span id="s6q3"></span>
 
-### Sometimes Allegro CL, particularly with large images, run out of memory with a storage-condition. Why might this be happening?
+### Q. Sometimes Allegro CL, particularly with large images, run out of memory with a storage-condition. Why might this be happening?
 
 The most common cause of this problem is that you've run out of address
 space for the lisp heap. The first question to ask yourself, as a
@@ -950,13 +943,12 @@ Continue reading the questions below for advice on how to proceed.
 
 <span id="s6q4"></span>
 
-### How is heap placement determined and what can go wrong?
+### Q. How is heap placement determined and what can go wrong?
 
 When Allegro CL starts up, space must be found for the following:
 
   - The Lisp heap. This is where Lisp data is stored. This heap may be
     moved or shrunk in order to fit into available memory at startup.
-
   - The Aclmalloc heap. This is where space allocated by aclmalloc is located,
     along with the value of certain C variables. Note that Aclmalloc heap is an
     unfortunate name because it is not directly related to C and is, in
@@ -966,11 +958,9 @@ When Allegro CL starts up, space must be found for the following:
     requirement to maintain the accuracy of pointers into the Aclmalloc heap
     across calls to
     [dumplisp](https://franz.com/support/documentation/current/doc/operators/excl/dumplisp.htm).
-
   - Shared libraries. These are the .so (on most UNIX machines),
     .dylib (on Mac OS X), and .dll (on Windows) files
     built with the system.
-
   - pll file: the \`pure lisp library' file contains constant data (such
     as strings and code vectors) to be used by Allegro CL when running.
     The name refers to the file type. Images can be built to use a pll
@@ -978,7 +968,6 @@ When Allegro CL starts up, space must be found for the following:
     files](https://franz.com/support/documentation/current/doc/miscellaneous.htm#pll-file-1)
     in
     [miscellaneous.htm.](https://franz.com/support/documentation/current/doc/miscellaneous.htm)
-
   - The stack.
 
 If you use 32 bit addressing (as Allegro CL does on most platforms),
@@ -1020,12 +1009,10 @@ be problems:
   - On platforms that do not support a reserve/commit distinction 
     (this is rare), there may not be sufficient swap space
     to accommodate the requested Lisp heap size.}
-
   - Shared libraries may not be mapped at their desired locations. The
     worst offender in this regard are apps run under the Windows
     operating systems. In some cases when a .dll cannot be mapped where
     it wants to be it will not work properly.
-
   - Even if there is space to map everything, the first try at mapping
     may fail and everything may need to be remapped. If the relocation
     is not done properly, this can cause Lisp to fail.
@@ -1045,11 +1032,8 @@ Programmers can affect heap placements using these arguments to
 [build-lisp-image](https://franz.com/support/documentation/current/doc/operators/excl/build-lisp-image.htm):
 
   - lisp-heap-start
-
   - lisp-heap-size
-
   - aclmalloc-heap-start
-
   - aclmalloc-heap-size
 
 Improvements in heap location management made available starting in
@@ -1061,7 +1045,7 @@ which make the application fail.
 
 <span id="s6q5"></span>
 
-### How does Lisp start up, in terms of shared-library linking and loading?
+### Q. How does Lisp start up, in terms of shared-library linking and loading?
 
 This is a complicated answer. We start with some terminology:
 
@@ -1096,31 +1080,26 @@ This is a complicated answer. We start with some terminology:
     library, and invokes it by getting and executing the lisp\_init()
     function. (You can provide your own main() that calls lisp\_init(),
     see [main.htm](https://franz.com/support/documentation/current/doc/main.htm)).
-
   - **Heap file**: a file with a .dxl extension (also called an image
     file) that holds the two Lisps heaps. One is the Aclmalloc heap, which 
     holds non-Lisp data including C
     variable values and data allocated by aclmalloc. The other heap is
     the Lisp heap, which holds all mutable Lisp data.
-
   - **Pure Lisp library**: A file with a .pll extension, which may be
     optionally loaded into a Lisp process and which contains read-only
     Lisp data.
-
   - **Link**: A process of attaching shared-libraries by name to an
     executable, usually by a linker program or by a compiler that
     automatically invokes a linker. Shared libraries and their symbols
     are not usually actually included into a program when linked, but
     references by name are made and the linked library is required to be
     available before the executable can start.
-
   - **Load**: A process by which a shared-library is dynamically
     mapped into the memory space of an already-running executable. The
     functions to call to load a shared-library are LoadLibrary() on
     Windows and dlopen() on Unix systems including MacOSX. The **load**
     Common Lisp function of Allegro CL calls one of these functions
     when it sees that the file being loaded is a shared-library.
-
   - **Bind**: Attaching functions within a shared-library to allow those
     functions to be called. The ff:def-foreign-call function in Allegro
     CL creates a binding location that is automatically updated when
@@ -1129,12 +1108,10 @@ This is a complicated answer. We start with some terminology:
     in order to call it. Binding is done by getting the address of the
     function's code, by GetProcAddress() in Windows and dlsym() on 
     Unix systems including MacOSX.
-
   - **Invoke**: The process of calling a function which has been bound.
     C invokes a function that has been bound by using a
     "pointer-to-function" construct. Lisp uses ff:def-foreign-call to
     bind a C function in such a way that it looks like a Lisp function.
-
   - **Committed area**: An area of memory that is mapped in and which
     consumes virtual memory, one page of virtual memory for each page of
     address space. The memory might be physical memory (RAM), or it can
@@ -1142,7 +1119,6 @@ This is a complicated answer. We start with some terminology:
     disk. The Committed area of the Lisp heap is usually the area
     bounded by the lisp-heap-start and the "Top" address in the room
     display.
-
   - **Reserved area**: An address range of memory is reserved when no
     other program unit has the right to map anything into that range,
     but the address range is not committed by actual swap space. This is
@@ -1233,10 +1209,8 @@ This is a complicated answer. We start with some terminology:
 Now, there is a potential problem with the last step. If
 
   - there are user libraries that are to be loaded, and
-
   - the lisp-heap-size is specified as larger than the available swap
     space, and
-
   - a contiguous address space is found for the Lisp heap that is also
     larger than the available swap,
 
@@ -1253,7 +1227,7 @@ problem in intractable in general, but solvable in individual cases.
 
 <span id="s6q6"></span>
 
-### <span id="heaplocations">How can I tell where my image's heaps are located, and what size they are?</span>
+### <span id="heaplocations">Q. How can I tell where my image's heaps are located, and what size they are?</span>
 
 The ansi standard function
 [room](https://franz.com/support/documentation/current/ansicl/dictentr/room.htm) can be
@@ -1270,7 +1244,7 @@ much space you want based on your application requirements.
 
 <span id="s6q7"></span>
 
-### <span id="addressspace">How can I tell what addresses are being used in my process space?</span>
+### <span id="addressspace">Q. How can I tell what addresses are being used in my process space?</span>
 
 There is a C function in the Lisp called **memory\_status\_dump**, with
 this prototype:
@@ -1447,18 +1421,13 @@ Some Process Explorer configuration tips:
 
   - make sure that there is a lower pane showing (menu: View -\> Show
     Lower Pane has check mark)
-
   - make sure that the lower pane shows DLL info (menu: View -\> Lower
     Pane View -\> DLL has check mark)
-
   - in the lower pane, right click on the column headers and pick
     SelectColumns. Check at least Name, Path, Base address, Mapped size,
     Mapping type
-
   - make sure that mlisp.exe is selected in the upper pane
-
   - make sure that the lower pane is sorted by ascending Base address
-
   - then, finally, save to a file.
 
 For other platforms, the situation is more complicated, but there are
@@ -1466,7 +1435,7 @@ usually operating system tools for interpreting the data.
 
 <span id="s6q8"></span>
 
-### <span id="rebasedll">\[Windows only\] How do I move DLL in memory so that it doesn't conflict with the Lisp heap?</span>
+### <span id="rebasedll">Q. \[Windows only\] How do I move DLL in memory so that it doesn't conflict with the Lisp heap?</span>
 
 The preferred Lisp heap starting address is 0x20000000 on x86 Windows
 (the heap grows to higher memory addresses). If, using the Process
@@ -1501,7 +1470,7 @@ currently assigned to the DLL.
 
 <span id="s6q9"></span>
 
-### What does the "Temporarily scaling back lisp reserved region from XXX to YYY bytes." mean?
+### Q. What does the "Temporarily scaling back lisp reserved region from XXX to YYY bytes." mean?
 
 It means that some other program has grabbed part of the address space
 that Lisp intended to use. This message is much more common on Windows,
@@ -1534,7 +1503,7 @@ that you will need to specify are :lisp-heap-start, :lisp-heap-size,
 
 <span id="s6q10"></span>
 
-### What should I know when choosing non-default heap locations?
+### Q. What should I know when choosing non-default heap locations?
 
 Both the Lisp and Aclmalloc heap must remain in one individual contiguous piece.
 (i.e a single contiguous lisp heap, and a separate single, contiguous C
@@ -1557,7 +1526,7 @@ to find free regions in the process address space.
 
 <span id="s6q11"></span>
 
-### How do I build an image with non-default heap sizes and/or locations?
+### Q. How do I build an image with non-default heap sizes and/or locations?
 
 The typical way to build new images is via the function
 [build-lisp-image](https://franz.com/support/documentation/current/doc/operators/excl/build-lisp-image.htm).
@@ -1565,22 +1534,16 @@ It accepts the following four keyword arguments that are used to
 relocate the lisp and Aclmalloc heaps from their default locations and sizes:
 
   - :lisp-heap-start
-
   - :lisp-heap-size
-
   - :aclmalloc-heap-start
-
   - :aclmalloc-heap-size
-
   - :initial-oldspace
-
   - :initial-newspace
 
 The following two keyword arguments let you further shape the lisp heap
 once it has been allocated.
 
   - :oldspace
-
   - :newspace
 
 Once you have chosen values for these parameters (see previous questions
@@ -1592,7 +1555,7 @@ show that the lisp heaps have been relocated.
 
 <span id="s6q12"></span>
 
-### How do I build default images provided by Franz with non-default heap sizes and/or locations?
+### Q. How do I build default images provided by Franz with non-default heap sizes and/or locations?
 
 A common problem with developers of 'large' applications is that default
 development images such as alisp.dxl and allegro.dxl are built with
@@ -1605,15 +1568,10 @@ To this end, we have added the following environment variables that
 will check for when creating a new image.
 
   - ACL\_BUILD\_LISP\_HEAP\_START: :lisp-heap-start argument
-
   - ACL\_BUILD\_LISP\_HEAP\_SIZE: :lisp-heap-size argument
-
   - ACL\_BUILD\_ACLMALLOC\_HEAP\_START: :c-heap-start argument
-
   - ACL\_BUILD\_ACLMALLOC\_HEAP\_SIZE: :c-heap-size argument
-
   - ACL\_BUILD\_NEWSPACE: :newspace argument
-
   - ACL\_BUILD\_OLDSPACE: :oldspace argument
 
 Arguments values should use lisp hex notation (\#x).
@@ -1632,7 +1590,7 @@ and their heap settings should persist even when patches are updated.
 
 <span id="s6q13"></span>
 
-### Can I specify heap locations and/or sizes when starting lisp?
+### Q. Can I specify heap locations and/or sizes when starting lisp?
 
 No. The Aclmalloc heap in particular is not relocatable, so this approach is not
 feasible. The Lisp heap is relocatable--and occasionally will shrink if
@@ -1644,7 +1602,7 @@ possible solution, we have not opened up this limited functionality.
 
 <span id="s7q1"></span>
 
-### <span id="memgobble">My memory gobbling loop causes the gc to perform badly. Why?</span>
+### <span id="memgobble">Q. My memory gobbling loop causes the gc to perform badly. Why?</span>
 
 The loop you are running is likely not releasing any bytes of heap for
 the amount it is allocating. A loop similar to
@@ -1733,7 +1691,7 @@ more smooth:
 
 <span id="s8q1"></span>
 
-### How do I pass and return 64-bit integers through the FFI?
+### Q. How do I pass and return 64-bit integers through the FFI?
 
 Allegro CL does not support 64-bit integers in 32-bit lisps, since we
 try to be compatible on all architectures on which we run, and since
@@ -1784,7 +1742,7 @@ memory leaks into their application.
 
 <span id="s9q1"></span>
 
-### How can I replace the lesstif installed with RedHat Linux 7.2 with openmotif (required for CLIM)?
+### Q. How can I replace the lesstif installed with RedHat Linux 7.2 with openmotif (required for CLIM)?
 
 This question is answered [here](#clim-lesstif-linux86), in the **Linux
 (architecture specific)** section.
@@ -1793,7 +1751,7 @@ This question is answered [here](#clim-lesstif-linux86), in the **Linux
 
 <span id="s10q1"></span>
 
-### When starting Composer I get the error `'Error: "Connection     refused" (errno 111) occurred while creating a local socket and     connecting to a remote host ... on port 6000.'`
+### Q. When starting Composer I get the error `'Error: "Connection     refused" (errno 111) occurred while creating a local socket and     connecting to a remote host ... on port 6000.'`
 
 Recent Linux distributions deliver X servers that no longer listen for
 tcp/ip connections, even on the local host. Composer accesses X displays
@@ -1805,7 +1763,6 @@ domain socket connections to the XCW and CLX modules. The LOG entries
 for these patches can be read at:
 
   - [code/clx.001](https://franz.com/support/patches/log/8.0/index.lhtml#base_clx_001)
-
   - [update/pdh001.001](https://franz.com/support/patches/log/8.0/index.lhtml#xcw_pdh001_001)
 
 These patches will be automatically downloaded if you run
@@ -1824,14 +1781,14 @@ will no longer be needed.
 
 <span id="s11q1"></span>
 
-### What changes are needed to move from a 32-bit to 64-bit Allegro CL?
+### Q. What changes are needed to move from a 32-bit to 64-bit Allegro CL?
 
 [Very
-little](https://franz.com/support/documentation/current/doc/implementation.htm#app-64bit-2).
+little (click to see the decumentation)](https://franz.com/support/documentation/current/doc/implementation.htm#app-64bit-2).
 
 <span id="s11q2"></span>
 
-### Why does my 64-bit foreign call cause a SIGSEGV?
+### Q. Why does my 64-bit foreign call cause a SIGSEGV?
 
 If your code works fine on 32-bit versions of Allegro CL, then it is
 most likely because of the difference in size between :int and :long.
@@ -1861,14 +1818,14 @@ pointer to an int variable) the defaults become a disadvantage.
 
 <span id="s12q1"></span>
 
-### <span id="fork">What issues must I be aware of when using excl.osi:fork</span>
+### <span id="fork">Q. What issues must I be aware of when using excl.osi:fork</span>
 
 Aside from the items documented in the fork(2) Man page, there are a few
 other issues that Allegro CL application writers must be aware of when
 using
 [excl.osi:fork](https://franz.com/support/documentation/current/doc/os-interface.htm#fork-op-bookmarkxx)
 
-##### All Lisp processes survive in the child process.
+##### Q. All Lisp processes survive in the child process.
 
 The first pitfall is that in a typical C application, only the thread
 calling fork() will survive in the child. In a non-os-thread lisp,
@@ -1881,7 +1838,7 @@ these threads are valid. We will update this faq with more information
 on how to resolve this issue when \*nix os-thread lisps become
 available.
 
-##### Inadvertent shared resources between parent and child. Sockets and Streams.
+##### Q. Inadvertent shared resources between parent and child. Sockets and Streams.
 
 The second pitfall is that the child process inherits all file
 descriptors from the parent. In lisp, it is not common to deal with fd's
@@ -1905,7 +1862,6 @@ with local nameservers in order to provide hostname lookup capabilities.
     shared with the parent, and fork prior to this. It is much easier to
     design your application with this in mind, than try to clean up
     unnecessary processes and objects in the child after the fact.
-
   - **Know what resources are being used in your application**. This is
     not always easy to know. There are many add-on modules that start
     lisp processes or open sockets without the application developer
@@ -1919,17 +1875,16 @@ with local nameservers in order to provide hostname lookup capabilities.
 
 <span id="s12q2"></span>
 
-### <span id="python">Do you have an interface to Python?</span>
+### <span id="python">Q. Do you have an interface to Python?</span>
 
 There are two resources which might be helpful to Python users:
 
   - <http://common-lisp.net/project/clpython/>
-
   - <http://common-lisp.net/project/python-on-lisp/>
 
 <span id="s12q3"></span>
 
-### Sometimes TIME results produce negative values. Why?
+### Q. Sometimes TIME results produce negative values. Why?
 
 As an example, see the below output
 
@@ -1964,7 +1919,7 @@ reasonable.
 
 <span id="s13q1"></span>
 
-### Which versions and platforms have symmetric multiprocessing (SMP) extensions?
+### Q. Which versions and platforms have symmetric multiprocessing (SMP) extensions?
 
 Symmetric multiprocessing is available as part of Allegro Common
 Lisp 10.1 on [these platforms](https://franz.com/products/allegro-common-lisp/#osinfo). (SMP may not be available on some platforms in earlier releases.)
@@ -1976,7 +1931,7 @@ documentation](https://franz.com/support/documentation/current/doc/smp.htm).
 
 <span id="s14q1"></span>
 
-### <span id="vista">Should Allegro CL on Windows be installed in the Program Files directory?</span>
+### <span id="vista">Q. Should Allegro CL on Windows be installed in the Program Files directory?</span>
 
 We do not recommend that because the security model on some versions
 of Windows requires having Administrator priviledges to modify files
@@ -1989,7 +1944,7 @@ what we recommend.
 
 <span id="s14q2"></span>
 
-### <span id="dep">My lisp immediately crashes a few seconds after startup. What's causing this?</span>
+### <span id="dep">Q. My lisp immediately crashes a few seconds after startup. What's causing this?</span>
 
 Current versions of Microsoft operating systems come with a security
 *feature* enabled called **Data Execution Prevention**. While it helps
@@ -1998,18 +1953,15 @@ our lisp from running\! To correct this, firat verify that DEP is
 enabled and is what is causing the problem.
 
   - Right-click on '**My Computer**' and choose **Properties**.
-
   - In the dialog that appears, select the '**Advanced**' tab, and then
     in the *Performance* section of the dialog, press the '**Settings**
     button.
-
   - Another dialog will appear. Choose the '**Data Execution
     Prevention**' tab.
 
 There are a couple of options here.
 
   - Turn on DEP for essential Windows programs and services only.
-
   - Turn on DEP for all programs and services except those I select.
 
 If DEP is only enabled for essential Windows programs, then DEP is not
@@ -2028,7 +1980,7 @@ dialog.
 
 <span id="s14q3"></span>
 
-### Why can't I use \`dir' with run-shell-command?
+### Q. Why can't I use \`dir' with run-shell-command?
 
 On Windows,
 [excl:run-shell-command](https://franz.com/support/documentation/current/doc/operators/excl/run-shell-command.htm)
@@ -2042,7 +1994,7 @@ details on this point.
 
 <span id="s14q4"></span>
 
-### How do I control the stack size on Windows?
+### Q. How do I control the stack size on Windows?
 
 The default stack reserve size for the lisp process is 16MB.
 
@@ -2071,7 +2023,7 @@ big enough to support the deepest computation on any thread.
 
 <span id="s14q5"></span>
 
-### How do I get ANSI ACL (rather than Modern ACL) to start when I double-click on an lpr file?
+### Q. How do I get ANSI ACL (rather than Modern ACL) to start when I double-click on an lpr file?
 
 The Windows registry associates file types with programs, so that double
 clicking on a file of a particular type initiates a program in a clearly
@@ -2103,7 +2055,7 @@ button, find the associated command line, and modify it.
 
 <span id="s14q6"></span>
 
-### Why is the compiler complaining about a missing in-package form when I am certain that my **offline file** starts with one?
+### Q. Why is the compiler complaining about a missing in-package form when I am certain that my **offline file** starts with one?
 
 When working with Windows offline files, the following situation has
 been observed. As a result, we recommend that in general, one not
@@ -2137,7 +2089,7 @@ files conveniently.
 
 <span id="s14q7"></span>
 
-### <span id="rightAlt">Why does the right Alt key not work the same as the left Alt key?</span>
+### <span id="rightAlt">Q. Why does the right Alt key not work the same as the left Alt key?</span>
 
 Common Graphics does not handle the righthand alt key on the Windows
 platform because that overrides its functionality on some keyboards
@@ -2159,12 +2111,11 @@ need to set the value in application code.
 
 <span id="s15q1"></span>
 
-### <span id="selinux">Why on Linux does Allegro CL die on startup?</span>
+### <span id="selinux">Q. Why on Linux does Allegro CL die on startup?</span>
 
 There are various errors which can occur:
 
   - `cannot restore segment prot after reloc: Permission denied`
-
   - Segmentation fault
 
 This problem occurs when SELinux (Security-Enhanced Linux) is enabled.
@@ -2193,12 +2144,11 @@ of these methods:
 
   - As root, run system-config-securitylevel, go to the SELinux tab, and
     change the SELinux setting to Disabled.
-
   - Set the line **SELINUX=disabled** in /etc/sysconfig/selinux.
 
 <span id="s15q2"></span>
 
-### On which x86 (i.e., Intel Pentium and friends) Linux versions do the currently supported versions of Allegro CL run?
+### Q. On which x86 (i.e., Intel Pentium and friends) Linux versions do the currently supported versions of Allegro CL run?
 
 Allegro CL runs on a large number of kernels, for which we do not
 provide a comprehensive listing. See our [Platform
@@ -2207,9 +2157,9 @@ kernel or glibc restrictions.
 
 <span id="s15q3"></span>
 
-### <span id="clim-lesstif-linux86">How can I replace the lesstif installed with RedHat Linux 7.2 with openmotif (required for CLIM)?</span>
+### <span id="clim-lesstif-linux86">Q. How can I replace the lesstif installed with RedHat Linux 7.2 with openmotif (required for CLIM)?</span>
 
-Allegro CL 8.x CLIM requires Motif 2.1, a free version of which is
+Allegro CL CLIM requires Motif 2.1, a free version of which is
 available from www.openmotif.org.
 
 Although the default installation of RedHat Linux 7.2 includes
@@ -2246,7 +2196,7 @@ instructions received with the software.
 
 <span id="s16q3"></span>
 
-### Why do I get crash reports when running 32-bit PPC Allegro CL?
+### Q. Why do I get crash reports when running 32-bit PPC Allegro CL?
 
 This is a known bug in Mac OS X. Programs which catch Unix-style signals
 and handle them will still result in "crash" reports being generated
@@ -2275,7 +2225,7 @@ referenced page.
 
 <span id="s17q1"></span>
 
-### Why does read-from-string ignore my first keyword argument (unless I also specify both optional arguments)?
+### Q. Why does read-from-string ignore my first keyword argument (unless I also specify both optional arguments)?
 
 If a function accepts both optional and keyword arguments, and you need
 to pass any keyword arguments, then you must first pass all optional
@@ -2298,7 +2248,7 @@ optionals and keywords.
 
 <span id="s17q2"></span>
 
-### Why does read-from-string signal an end-of-file error even when I pass the eof-error-p argument as nil?
+### Q. Why does read-from-string signal an end-of-file error even when I pass the eof-error-p argument as nil?
 
 According to the ANSI spec, a null eof-error-p argument suppresses an
 end-of-file condition that occurs just before reading a new object, but
