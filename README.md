@@ -198,7 +198,7 @@ the eof-error-p argument as nil?](#s17q2)
 
 ## <span id="s-admin">Administrative Issues</span>
 
-<span id="s1q1" style="color:red"></span>
+<span id="s1q1"></span>
 
 ### Q. What is the current version of Allegro CL?
 
@@ -210,7 +210,7 @@ version number is relevant to a FAQ answer.
 
 <span id="s1q2"></span>
 
-### <span id="howtoreportbugs" style="color:red>Q. How should I report bugs?</span>
+### <span id="howtoreportbugs" style="color:red">Q. How should I report bugs?</span>
 
 What should be included in a bug report is described in the section
 [Reporting
@@ -565,7 +565,7 @@ cannot access the URL.](#lfcannotaccessurl))
 
 ### <span id="lfmissingemail">Q. I have misplaced the email telling me the URL from which I can download your license?</span>
 
-**NOTE: Express lincenses are part of the download so this item does
+**NOTE: Express licenses are part of the download so this item does
   not apply to Express.**
 
 We can send the license to you by email. (The link is to
@@ -809,7 +809,7 @@ to handle it:
     
 ```
 
-1.  A non-lisp thread may be called, at which time there is no way to
+3.  A non-lisp thread may be called, at which time there is no way to
     limit the stack on some machines. There is no workaround for this
     problem, other than to reduce one's dependence on non-lisp code.
 
@@ -1031,10 +1031,10 @@ single image suitable for all potential users on a particular platform.
 Programmers can affect heap placements using these arguments to
 [build-lisp-image](https://franz.com/support/documentation/current/doc/operators/excl/build-lisp-image.htm):
 
-  - lisp-heap-start
-  - lisp-heap-size
-  - aclmalloc-heap-start
-  - aclmalloc-heap-size
+  - :lisp-heap-start
+  - :lisp-heap-size
+  - :aclmalloc-heap-start
+  - :aclmalloc-heap-size
 
 Improvements in heap location management made available starting in
 release 5.0.1 make the successful mapping of large images more likely,
