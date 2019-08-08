@@ -22,29 +22,20 @@ items stay in the FAQ more or less permanently.
 
 ## The most popular FAQ entries
 
-[\[Express\] Does the Express Edition expire?](#expresslicense)
-
-[\[Express\] What is the best way to update the Express
-Edition?](#updatingexpress)
-
-[\[Express\] and 32-bit Edition does not work on Ubuntu](#ubuntu32bit)
-
-[How do I install patches?](#s-patches)
-
-[Why on Linux does Allegro CL die on startup?](#selinux)
-
-[My memory gobbling loop causes the gc to perform badly.
-Why?](#memgobble)
-
-[How can I specify very large heap sizes for 64-bit versions of
-Lisp?](#largeheaps)
+* [\[Express\] Does the Express Edition expire?](#expresslicense)
+* [\[Express\] What is the best way to update the Express Edition?](#updatingexpress)
+* [\[Express\] and 32-bit Edition does not work on Ubuntu](#ubuntu32bit)
+* [How do I install patches?](#s-patches)
+* [Why on Linux does Allegro CL die on startup?](#selinux)
+* [My memory gobbling loop causes the gc to perform badly. Why?](#memgobble)
+* [How can I specify very large heap sizes for 64-bit versions of Lisp?](#largeheaps)
 
 ## Most recent FAQ entries
 
 [Why is equal hash table access slow when the keys are structure
 objects?](#structureht)
 
-[Which versions and platforms have symmetric multiprocessing
+[Which versions and platforms have symmetric multiprocessing (SMP)
 extensions?](#smpversions)
 
 [\[Express\] What is the best way to update the Express
@@ -90,7 +81,7 @@ system and Allegro CL?](#s1q8)
 [How do I manually download patches if I am unable to use
 (sys:update-allegro)?](#s2q3)
 
-[How can I install Allegro CL patches on Windows Vista/7?](#pvista)
+[Why can't I get update.exe to run on Windows?](#pvista)
 
 ## [Express Edition installation and license file issues](#s-express)
 
@@ -105,14 +96,13 @@ Express Edition is a virus?](#s3q4)
 
 [\[Express\] How long can I use the Express Edition?](#s3q5)
 
+[\[Express\] Does the Express Edition expire?](#expresslicense)
+
 [\[Express\] The date in the license file (devel.lic) is in the future,
 but when I run Allegro CL it says my license has expired. Why might this
 happen?](#s3q6)
 
 [\[Express\] How do I build mlisp, alisp, or allegro images?](#s3q7)
-
-[\[Express\] Is Lisp in a box available with the most recent Express
-Edition?](#s3q8)
 
 ## [Professional/Enterprise Edition installation and license file issues](#s-proent)
 
@@ -225,7 +215,7 @@ CL?](#s11q1)
 
 ## [Multiprocessing](#smpversions)
 
-[Which versions and platforms have symmetric multiprocessing
+[Which versions and platforms have symmetric multiprocessing (SMP)
 extensions?](#s13q1)
 
 ## [Windows (architecture specific)](#s-windows)
@@ -257,10 +247,6 @@ openmotif (required for CLIM)?](#clim-lesstif-linux86)
 
 ## [Mac OS X (architecture specific)](#s-macosx)
 
-[Allegro CL does not work on Mac OS X Lion](#osxLion)
-
-[The downloaded .dmg.bz2 file appears to be corrupt. Why?](#bz2macosx)
-
 [Why do I get crash reports when running 32-bit PPC Allegro CL?](#s16q3)
 
 ## [Using Common Lisp (non-Allegro specific)](#s-using-cl)
@@ -281,7 +267,7 @@ the eof-error-p argument as nil?](#s17q2)
 
 The current version of Allegro CL is shown on [this
 page](https://franz.com/products/allegro-common-lisp/index.lhtml). This
-FAQ applies to any version of Allegro CL 9.0 and any version with
+FAQ applies to Allegro CL 9.0 and any version with
 major version number 10 (e.g. 10.0 or 10.1). It is noted where the
 version number is relevant to a FAQ answer.
 
@@ -549,12 +535,10 @@ updated release with a new license file.
 
 This can happen when the date on your computer is incorrectly set to a
 date in the future later than the license expiration date. Allegro CL
-will not start because it thinks the license has expired. You cannot
-renew because the Franz Inc. computers (which are presumably set to the
-correct date) determine it is not time to renew. You can check the date
-on your computer by looking at the Date/Time entry on the Control Panel.
-Please consult your Windows documentation for information on resetting
-the date on your computer.
+will not start because it thinks the license has expired. You can
+check the date on your computer by looking at the Date/Time entry on
+the Control Panel.  Please consult your Windows documentation for
+information on resetting the date on your computer.
 
 <span id="s3q7"></span>
 
@@ -587,6 +571,10 @@ the date on your computer.
   (sys:copy-file "sys:allegro-express.exe" "sys:allegro.exe"))
     
 ```
+> Evaluating any of the above forms does not add a menu item to the
+> Start Menu. To run the resulting image, you will need to run the
+> executable created in each form.
+
 
 **UNIX**: evaluate the following form to build **mlisp** image from a
 running **alisp**:
@@ -600,21 +588,6 @@ running **alisp**:
     
 ```
 
-> Evaluating any of the above forms does not add a menu item to the
-> Start Menu. To run the resulting image, you will need to run the
-> executable created in each form.
-
-<span id="s3q8"></span>
-
-### \[Express\] Is Lisp in a box available with the most recent Express Edition?
-
-NOTE: "Lisp in a box" is not being updated any longer.
-
-Yes, here:
-
-  - <http://www.gigamonkeys.com/book/lispbox/>
-
-  - <http://franz.com/PracticalCommonLisp/>
 
 ## <span id="s-proent">Professional/Enterprise Edition installation and license file issues</span>
 
@@ -657,8 +630,8 @@ cannot access the URL.](#lfcannotaccessurl))
 
 ### <span id="lfmissingemail">I have misplaced the email telling me the URL from which I can download your license?</span>
 
-**NOTE: Express users cannot use this method because the license file is
-not stored based on your email address.**
+**NOTE: Express lincenses are part of the download so this item does
+  not apply to Express.**
 
 We can send the license to you by email. (The link is to
 <http://franz.com/lfs/lostlicense> and on that page, you are asked for
@@ -2054,10 +2027,10 @@ reasonable.
 
 <span id="s13q1"></span>
 
-### Which versions and platforms have symmetric multiprocessing extensions?
+### Which versions and platforms have symmetric multiprocessing (SMP) extensions?
 
-Symmetric multiprocessing was first released as part of Allegro Common
-Lisp 9.0 on [these platforms](https://franz.com/products/allegro-common-lisp/#osinfo).
+Symmetric multiprocessing is available as part of Allegro Common
+Lisp 10.1 on [these platforms](https://franz.com/products/allegro-common-lisp/#osinfo). (SMP may not be available on some platforms in earlier releases.)
 
 For more information see our [SMP
 documentation](https://franz.com/support/documentation/current/doc/smp.htm).
