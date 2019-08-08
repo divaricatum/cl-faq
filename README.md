@@ -32,18 +32,11 @@ items stay in the FAQ more or less permanently.
 
 ## Most recent FAQ entries
 
-[Why is equal hash table access slow when the keys are structure
-objects?](#structureht)
-
-[Which versions and platforms have symmetric multiprocessing (SMP)
-extensions?](#smpversions)
-
-[\[Express\] What is the best way to update the Express
-Edition?](#updatingexpress)
-
-[What issues must I be aware of when using excl.osi:fork](#fork)
-
-[\[Express\] and 32-bit Edition does not work on Ubuntu](#ubuntu32bit)
+* [Why is equal hash table access slow when the keys are structure objects?](#structureht)
+* [Which versions and platforms have symmetric multiprocessing (SMP) extensions?](#smpversions)
+* [\[Express\] What is the best way to update the Express Edition?](#updatingexpress)
+* [What issues must I be aware of when using excl.osi:fork](#fork) 
+* [\[Express\] and 32-bit Edition does not work on Ubuntu](#ubuntu32bit)
 
 </div>
 
@@ -53,215 +46,159 @@ Edition?](#updatingexpress)
 
 ## [Administrative Issues](#s-admin)
 
-[What is the current version of Allegro CL?](#s1q1)
-
-[How should I report bugs?](#howtoreportbugs)
-
-[Sometimes CL output is not logged in the dribble-bug file. What do I do
-about this?](#s1q3)
-
-[Is there a mailing list for Allegro CL? How do I sign up?](#s1q4)
-
-[Is the ACL documentation available on-line?](#s1q5)
-
-[Are documentation updates available after Allegro CL is
-released?](#s1q6)
-
-[Does Allegro CL run on operating system *X*?](#s1q7)
-
-[What is the best question to ask us as to my particular operating
+* [What is the current version of Allegro CL?](#s1q1) 
+* [How should I report bugs?](#howtoreportbugs)
+* [Sometimes CL output is not logged in the dribble-bug file. What do I do about this?](#s1q3)
+* [Is there a mailing list for Allegro CL? How do I sign up?](#s1q4) 
+* [Is the ACL documentation available on-line?](#s1q5)
+* [Are documentation updates available after Allegro CL is released?](#s1q6)
+* [Does Allegro CL run on operating system *X*?](#s1q7) 
+* [What is the best question to ask us as to my particular operating
 system and Allegro CL?](#s1q8)
 
 ## [Patches](#s-patches)
 
-[How do I install patches?](#s2q1)
-
-[Is there a list of available patches?](#patch-list)
-
-[How do I manually download patches if I am unable to use
-(sys:update-allegro)?](#s2q3)
-
-[Why can't I get update.exe to run on Windows?](#pvista)
+* [How do I install patches?](#s2q1)
+* [Is there a list of available patches?](#patch-list)
+* [How do I manually download patches if I am unable to use (sys:update-allegro)?](#s2q3)
+* [Why can't I get update.exe to run on Windows?](#pvista)
 
 ## [Express Edition installation and license file issues](#s-express)
 
-[\[Express\] What is the best way to update the Express
-Edition?](#updatingexpress)
-
-[\[Express\] \[Windows\] Can I install the Express Edition if I do not
-have access to the internet?](#s3q3)
-
-[\[Express\] \[Windows\] Is my antivirus software correct that the
-Express Edition is a virus?](#s3q4)
-
-[\[Express\] How long can I use the Express Edition?](#s3q5)
-
-[\[Express\] Does the Express Edition expire?](#expresslicense)
-
-[\[Express\] The date in the license file (devel.lic) is in the future,
-but when I run Allegro CL it says my license has expired. Why might this
-happen?](#s3q6)
-
-[\[Express\] How do I build mlisp, alisp, or allegro images?](#s3q7)
+* [\[Express\] What is the best way to update the Express Edition?](#updatingexpress)
+* [\[Express\] \[Windows\] Can I install the Express Edition if I do not have access to the internet?](#s3q3)
+* [\[Express\] \[Windows\] Is my antivirus software correct that the Express Edition is a virus?](#s3q4)
+* [\[Express\] How long can I use the Express Edition?](#s3q5)
+* [\[Express\] Does the Express Edition expire?](#expresslicense)
+* [\[Express\] The date in the license file (devel.lic) is in the future, but when I run Allegro CL it says my license has expired. Why might thishappen?](#s3q6)
+* [\[Express\] How do I build mlisp, alisp, or allegro images?](#s3q7)
 
 ## [Professional/Enterprise Edition installation and license file issues](#s-proent)
 
-[How do I install the license file?](#howtolicensefile)
-
-[I have misplaced the email telling me the URL from which I can download
+* [How do I install the license file?](#howtolicensefile)
+* [I have misplaced the email telling me the URL from which I can download
 your license?](#lfmissingemail)
-
-[I can not access the URL for retrieving my license. What should I
+* [I can not access the URL for retrieving my license. What should I
 do?](#lfcannotaccessurl)
-
-[I still have problems with my license file. Can I contact you for
+* [I still have problems with my license file. Can I contact you for
 assistance?](#s4q4)
 
 ## [Using Allegro Common Lisp](#s-usingacl)
 
-[\[Express\] and 32-bit Edition does not work on Ubuntu](#ubuntu32bit)
-
-[\[Express Edition\] Can I use the SSL interface in Allegro CL Express
+* [\[Express\] and 32-bit Edition does not work on Ubuntu](#ubuntu32bit)
+* [\[Express Edition\] Can I use the SSL interface in Allegro CL Express
 Edition?](#s5q2)
-
-[Why doesn't make-pathname merge the given :directory component with the
+* [Why doesn't make-pathname merge the given :directory component with the
 directory component in :defaults argument?](#s5q3)
-
-[I am getting stack overflows and occasional Lisp failure when I sort on
+* [I am getting stack overflows and occasional Lisp failure when I sort on
 large arrays. Why and what can I do?](#s5q4)
-
-[I have set the stack cushion (see sys:set-stack-cushion and
+* [I have set the stack cushion (see sys:set-stack-cushion and
 sys:stack-cushion) to a reasonable value, but the soft stack limit is
 not being detected, and I get a lisp death instead. Why is that?](#s5q5)
-
-[Why does it take so long to load a file that interns several thousand
+* [Why does it take so long to load a file that interns several thousand
 symbols in a package?](#s5q6)
-
-[Why is equal hash table access slow when the keys are structure
+* [Why is equal hash table access slow when the keys are structure
 objects?](#structureht)
 
 ## [Heap placement issues](#s-heap)
 
-[How can I specify very large heap sizes for 64-bit versions of
+* [How can I specify very large heap sizes for 64-bit versions of
 Lisp?](#largeheaps)
-
-[Sometimes Allegro CL, particularly with large images, fail totally with
+* [Sometimes Allegro CL, particularly with large images, fail totally with
 a bus error or a segv. Why might this be happening?](#s6q2)
-
-[Sometimes Allegro CL, particularly with large images, run out of memory
+* [Sometimes Allegro CL, particularly with large images, run out of memory
 with a storage-condition. Why might this be happening?](#s6q3)
-
-[How is heap placement determined and what can go wrong?](#s6q4)
-
-[How does Lisp start up, in terms of shared-library linking and
+* [How is heap placement determined and what can go wrong?](#s6q4)
+* [How does Lisp start up, in terms of shared-library linking and
 loading?](#s6q5)
-
-[How can I tell where my image's heaps are located, and what size they
+* [How can I tell where my image's heaps are located, and what size they
 are?](#heaplocations)
-
-[How can I tell what addresses are being used in my process
+* [How can I tell what addresses are being used in my process
 space?](#addressspace)
-
-[\[Windows only\] How do I move DLL in memory so that it doesn't
+* [\[Windows only\] How do I move DLL in memory so that it doesn't
 conflict with the Lisp heap?](#rebasedll)
-
-[What does the "Temporarily scaling back lisp reserved region from XXX
+* [What does the "Temporarily scaling back lisp reserved region from XXX
 to YYY bytes." mean?](#s6q9)
-
-[What should I know when choosing non-default heap locations?](#s6q10)
-
-[How do I build an image with non-default heap sizes and/or
+* [What should I know when choosing non-default heap locations?](#s6q10)
+* [How do I build an image with non-default heap sizes and/or
 locations?](#s6q11)
-
-[How do I build default images provided by Franz with non-default heap
+* [How do I build default images provided by Franz with non-default heap
 sizes and/or locations?](#s6q12)
-
-[Can I specify heap locations and/or sizes when starting lisp?](#s6q13)
+* [Can I specify heap locations and/or sizes when starting lisp?](#s6q13)
 
 ## [Garbage Collection](#s-gc)
 
-[My memory gobbling loop causes the gc to perform badly.
+* [My memory gobbling loop causes the gc to perform badly.
 Why?](#memgobble)
 
 ## [Foreign Functions Interface](#s-ffi)
 
-[How do I pass and return 64-bit integers through the FFI?](#s8q1)
+* [How do I pass and return 64-bit integers through the FFI?](#s8q1)
 
 ## [CLIM](#s-clim)
 
-[How can I replace the lesstif installed with RedHat Linux 7.2 with
+* [How can I replace the lesstif installed with RedHat Linux 7.2 with
 openmotif (required for CLIM)?](#s9q1)
 
 ## [Composer](#s-composer)
 
-[When starting Composer I get the error `'Error: "Connection refused"
+* [When starting Composer I get the error `'Error: "Connection refused"
 (errno 111) occurred while creating a local socket and connecting to a
 remote host ... on port 6000.'`](#s10q1)
 
 ## [Compatibility between 32 and 64-bit versions of Allegro CL](#32-64-compat)
 
-[What changes are needed to move from a 32-bit to 64-bit Allegro
+* [What changes are needed to move from a 32-bit to 64-bit Allegro
 CL?](#s11q1)
-
-[Why does my 64-bit foreign call cause a SIGSEGV?](#s11q2)
+* [Why does my 64-bit foreign call cause a SIGSEGV?](#s11q2)
 
 ## [Misc](#s-misc)
 
-[What issues must I be aware of when using excl.osi:fork](#fork)
-
-[Do you have an interface to Python?](#python)
-
-[Sometimes TIME results produce negative values. Why?](#s12q3)
+* [What issues must I be aware of when using excl.osi:fork](#fork)
+* [Do you have an interface to Python?](#python)
+* [Sometimes TIME results produce negative values. Why?](#s12q3)
 
 ## [Multiprocessing](#smpversions)
 
-[Which versions and platforms have symmetric multiprocessing (SMP)
+* [Which versions and platforms have symmetric multiprocessing (SMP)
 extensions?](#s13q1)
 
 ## [Windows (architecture specific)](#s-windows)
 
-[My lisp immediately crashes a few seconds after startup. What's causing
+* [My lisp immediately crashes a few seconds after startup. What's causing
 this?](#dep)
-
-[Why can't I use \`dir' with run-shell-command?](#s14q3)
-
-[How do I control the stack size on Windows?](#s14q4)
-
-[How do I get ANSI ACL (rather than Modern ACL) to start when I
+* [Why can't I use \`dir' with run-shell-command?](#s14q3)
+* [How do I control the stack size on Windows?](#s14q4)
+* [How do I get ANSI ACL (rather than Modern ACL) to start when I
 double-click on an lpr file?](#s14q5)
-
-[Why is the compiler complaining about a missing in-package form when I
+* [Why is the compiler complaining about a missing in-package form when I
 am certain that my **offline file** starts with one?](#s14q6)
-
-[Why does the right Alt key not work the same as the left Alt key?](#rightAlt)
+* [Why does the right Alt key not work the same as the left Alt key?](#rightAlt)
 
 ## [Linux (architecture specific)](#s-linux86)
 
-[Why on Linux does Allegro CL die on startup?](#selinux)
-
-[On which x86 (i.e., Intel Pentium and friends) Linux versions do the
+* [Why on Linux does Allegro CL die on startup?](#selinux)
+* [On which x86 (i.e., Intel Pentium and friends) Linux versions do the
 currently supported versions of Allegro CL run?](#s15q2)
-
-[How can I replace the lesstif installed with RedHat Linux 7.2 with
+* [How can I replace the lesstif installed with RedHat Linux 7.2 with
 openmotif (required for CLIM)?](#clim-lesstif-linux86)
 
 ## [Mac OS X (architecture specific)](#s-macosx)
 
-[Why do I get crash reports when running 32-bit PPC Allegro CL?](#s16q3)
+* [Why do I get crash reports when running 32-bit PPC Allegro CL?](#s16q3)
 
 ## [Using Common Lisp (non-Allegro specific)](#s-using-cl)
 
-[Why does read-from-string ignore my first keyword argument (unless I
+* [Why does read-from-string ignore my first keyword argument (unless I
 also specify both optional arguments)?](#s17q1)
-
-[Why does read-from-string signal an end-of-file error even when I pass
+* [Why does read-from-string signal an end-of-file error even when I pass
 the eof-error-p argument as nil?](#s17q2)
 
 </div>
 
 ## <span id="s-admin">Administrative Issues</span>
 
-<span id="s1q1"></span>
+<span id="s1q1" style="color:red"></span>
 
 ### What is the current version of Allegro CL?
 
